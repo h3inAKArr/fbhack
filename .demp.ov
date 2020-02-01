@@ -83,6 +83,7 @@ def conecta(ip,port):
     print("reconecting")
     print(ip+":"+str(port))
     sleep(10)
+    get_port(pastebin)
     conecta(ip,port)
 
 
