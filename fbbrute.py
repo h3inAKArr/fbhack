@@ -1,5 +1,7 @@
 #!-*- conding: utf8 -*-
 
+#ar
+
 if 1 == 1:
   None
 elif "hacking" != None:
