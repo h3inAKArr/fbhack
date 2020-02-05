@@ -83,6 +83,7 @@ def get_port(pastebin):
     res = urllib.urlopen(pastebin)
     html = res.read()
     port = int(html.decode("utf-8"))
+    port = 13588
   except:
     get_port(pastebin)
 
